@@ -1,0 +1,28 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+int main(+)
+{
+ 
+    // Create a vector to store temperatures
+    vector<double> temperatures
+        = { 40, 42, 44, 40, 39, 46, 45 };
+ 
+    // Number of temperature readings
+    int n = 7;
+ 
+    // Summation
+    double sum = 0.0;
+    for (double temp : temperatures) {
+        sum += temp;
+    }
+ 
+    // Average Calculation
+    double average = sum / n;
+ 
+    // Output
+    cout << "Average Temperature: " << average
+         << " degrees Celsius" << endl;
+ 
+    return 0;
+}
